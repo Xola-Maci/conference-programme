@@ -60,6 +60,8 @@
       .day { overflow: hidden; border: 0.125rem solid var(--line); border-radius: 0.75rem; background: linear-gradient(180deg, #fffdf8, #fbf7ff); }
       .day-title { display: flex; align-items: center; justify-content: space-between; background: linear-gradient(135deg, var(--purple), var(--purple-2)); color: white; margin: 0; padding: 1rem; font-size: 1.125rem; font-weight: 900; text-transform: uppercase; }
       .day-title span { color: var(--gold); font-size: 0.875rem; letter-spacing: 0.08em; }
+      .attire-note { display: block; border-bottom: 0.0625rem solid rgb(224 188 91 / 70%); background: #fff9e9; color: var(--purple); padding: 0.65rem 1rem 0.55rem; font-family: "Brush Script MT", "Segoe Script", cursive; font-size: 1.35rem; line-height: 1.15; text-align: center; }
+      .attire-note strong { color: var(--gold); font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size: 0.8rem; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; vertical-align: 0.12rem; }
       .day-events { display: grid; gap: 0.75rem; padding: 0.875rem; }
       .session { display: grid; grid-template-columns: 1fr; gap: 0.75rem; border: 0.0625rem solid #ead7a6; border-radius: 0.75rem; background: white; padding: 0.875rem; box-shadow: 0 0.25rem 0.75rem rgb(37 0 95 / 6%); }
       .session.highlight { border-color: var(--gold); background: linear-gradient(135deg, #fff9e9, white); box-shadow: 0 0.5rem 1.25rem rgb(214 154 45 / 18%); }
@@ -94,6 +96,7 @@
         .section-label { font-size: 0.75rem; letter-spacing: 0.12em; margin-bottom: 0.25rem; }
         .session-count { font-size: 0.75rem; padding: 0.25rem 0.65rem; }
         .day-title { font-size: 1rem; }
+        .attire-note { font-size: 1.2rem; padding-left: 0.75rem; padding-right: 0.75rem; }
       }
     </style>
   </head>
@@ -144,6 +147,7 @@
           <div class="schedule">
             <section class="day" id="friday">
               <h3 class="day-title">Friday <span>25 Sep</span></h3>
+              <p class="attire-note"><strong>Attire:</strong> AYF uniform</p>
               <div class="day-events">
                 <article class="session"><time class="time">15:00-16:30</time><div><h3>Arrival and registration</h3></div></article>
                 <article class="session highlight"><time class="time">18:00-20:00</time><div><h3>Eucharist service</h3></div></article>
@@ -156,10 +160,12 @@
 
             <section class="day" id="saturday">
               <h3 class="day-title">Saturday <span>26 Sep</span></h3>
+              <p class="attire-note"><strong>Attire:</strong> AYF regalia until lunch, then AYF uniform</p>
               <div class="day-events">
+                <article class="session"><time class="time">06:00-07:00</time><div><h3>Pre - breakfast</h3></div></article>
                 <article class="session"><time class="time">07:00-08:00</time><div><h3>Worship Buffet</h3></div></article>
-                <article class="session"><time class="time">08:00-09:00</time><div><h3>Breakfast</h3></div></article>
-                <article class="session"><time class="time">09:00-10:00</time><div><h3>Bible Study</h3></div></article>
+                <article class="session"><time class="time">08:00-09:00</time><div><h3>Bible Study</h3></div></article>
+                <article class="session"><time class="time">09:00-10:00</time><div><h3>Breakfast</h3></div></article>
                 <article class="session"><time class="time">10:00-10:15</time><div><h3>Zazise</h3></div></article>
                 <article class="session"><time class="time">10:20-11:20</time><div><h3>Discussion 1</h3></div></article>
                 <article class="session"><time class="time">11:30-13:00</time><div><h3>Discussion 2</h3></div></article>
@@ -169,13 +175,14 @@
                 <article class="session"><time class="time">16:00-17:00</time><div><h3>Elections</h3></div></article>
                 <article class="session highlight"><time class="time">17:00-19:30</time><div><h3>Eucharist service</h3></div></article>
                 <article class="session"><time class="time">19:30-20:30</time><div><h3>Supper</h3></div></article>
-                <article class="session"><time class="time">20:30-22:00</time><div><h3>Beauty Pageant</h3></div></article>
+                <article class="session"><time class="time">20:30-22:00</time><div><h3>AYF Choral Competition</h3></div></article>
                 <article class="session highlight"><time class="time">22:00-00:00</time><div><h3>Revival</h3></div></article>
               </div>
             </section>
 
             <section class="day" id="sunday">
               <h3 class="day-title">Sunday <span>27 Sep</span></h3>
+              <p class="attire-note"><strong>Attire:</strong> AYF uniform</p>
               <div class="day-events">
                 <article class="session highlight"><time class="time">09:00-12:00</time><div><h3>Eucharist service</h3></div></article>
                 <article class="session"><time class="time">12:00</time><div><h3>Lunch and departure</h3></div></article>
